@@ -1,0 +1,27 @@
+header.header 
+    .header__prenav 
+        span.icon__film 
+        p.header__prenav-text See no special offer restrictions
+    nav.header__nav 
+        .container.header__nav-info 
+            a.logo(href="#!") 
+                img(src="./img/logo.webp", alt="")
+                span.logo__span CINEMAS
+            ul.header__nav-list 
+                -var nav = ['Films','Serials', 'Cartoons', 'Collections',]
+                each value in nav 
+                    li.header__nav-item 
+                        a.header__nav-link(href="#!")= value
+            .header__burger 
+                .header__burger-line 
+                .header__burger-line 
+                .header__burger-line 
+    .header__content 
+        img(src="./img/header.webp", alt="").header__content-img
+        .container 
+            h1.header__content-title Kong: Skull Island
+            p.header__content-text The film takes the viewer to the 70s of the last century. The protagonist organizes an expedition to the Skull island, always covered in fog, on which King Kong was once caught to find the missing brother and some mysterious substance. During...
+            .header__content-btns 
+                a.btn(href="#!") Watch now
+                a.btn(href="#!") Download
+

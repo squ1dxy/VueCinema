@@ -1,0 +1,16 @@
+-var series = [{img: 'wanda', title: 'Wanda Vision'}, {img: 'flash', title: 'The Flash'},{img: 'great', title: 'The Great'}, {img: 'gotem', title: 'GOTHAM'}, {img: 'witcher', title: 'The witcher'}]
+
+section.series 
+    .container 
+        h2.title.series__title Series
+        .series__catalog
+            .series__item 
+                img.series__item-img(src="img/got.webp", alt="")
+                h2.series__item-title Game of Thrones
+                p.series__item-text The time of prosperity is drawing to a close, and the summer, which lasted almost a decade, is dying away. Around the center of power of the Seven Kingdoms, the Iron Throne, a conspiracy is ripening, and during this difficult time, the king decides to seek support from his youth friend Eddard Stark. In a world where everyone - from the king to the mercenary - is eager for power, intrigues and is ready to stick a knife in the back, there is ...
+                a.btn.series__btn(href="#!") Watch now 
+            -for(var i = 0; i < series.length;i++)
+                .series__item
+                    img.series__item-img(src="img/" + series[i].img + '.webp', alt="")
+                    span.icon__play 
+                    h3.series__item-title= series[i].title

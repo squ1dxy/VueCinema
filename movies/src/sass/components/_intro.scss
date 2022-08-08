@@ -1,0 +1,29 @@
+.intro {
+    background: linear-gradient(90deg, #DEF7FF 0%, #F4FCFF 45.64%, rgba(255, 255, 255, 0) 100.72%);
+    padding-top: 42px;
+    padding-bottom: 80px;
+    position: relative;
+    &__img {
+        max-width: 100%;
+    }
+    &__text {
+        font-size: 18px;
+        line-height: 27px;
+        text-align: justify;
+        color: black;
+        font-family: $R;
+        max-width: 558px;
+        width: 100%;
+        margin: 53px 0;
+    }
+    &__video {
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -2;
+        height: 100%;
+        &-film {
+            height: 100%;
+        }
+    }
+}
